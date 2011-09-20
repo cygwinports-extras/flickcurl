@@ -1,0 +1,12 @@
+This header was long deprecated and finally removed in 7.21.7.
+
+--- origsrc/flickcurl-1.21/src/flickcurl_internal.h	2010-07-24 14:33:34.000000000 -0500
++++ src/flickcurl-1.21/src/flickcurl_internal.h	2011-09-20 13:09:43.754435300 -0500
+@@ -24,7 +24,6 @@
+ #include <libxml/xpath.h>
+ 
+ #include <curl/curl.h>
+-#include <curl/types.h>
+ #include <curl/easy.h>
+ 
+ 

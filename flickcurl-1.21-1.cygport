@@ -1,0 +1,12 @@
+DESCRIPTION="Flickr API C library"
+HOMEPAGE="http://librdf.org/flickcurl/"
+SRC_URI="http://download.dajobe.org/flickcurl/${P}.tar.gz"
+PATCH_URI="1.21-curl-types.h.patch"
+
+PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+flickcurl_CONTENTS="--exclude=${PN}-config* usr/bin/*.exe usr/share/doc/ usr/share/man/"
+libflickcurl0_CONTENTS="usr/bin/cygflickcurl-0.dll"
+libflickcurl_devel_CONTENTS="usr/bin/${PN}-config usr/include/ usr/lib/
+                             usr/share/gtk-doc/ usr/share/man/man1/${PN}-config.1*"
+
+MAKEOPTS+=" LDFLAGS+=-no-undefined"
